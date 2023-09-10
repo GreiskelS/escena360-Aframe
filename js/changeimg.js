@@ -1,15 +1,13 @@
-AFRAME.registerComponent('change-img', {
-    schema: {
-      img: { type: 'string' }
-    },
-  
-    init: function () {
-        var data = this.data;
-        var el = this.el;
 
-      el.addEventListener("mouseenter", function() {
-        var mySky = document.querySelector("#sky");
-        mySky.setAttribute("src", data.img);
-      });
-    }
+document.addEventListener("DOMContentLoaded", function () {
+  const iframe = document.querySelector("iframe");
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      const src = this.getAttribute("data-src");
+      iframe.src = src;
+    });
   });
+});
