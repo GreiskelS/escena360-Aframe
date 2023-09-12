@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link href="/escena360-Aframe/style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" class="logo" href="./escena360-Aframe/img/SomosF5.svg" />
+</head>
+<title>360 F5</title>
+</head>
+
+<body>
+  <Navbar expand="lg" className="bg-body-tertiary">
+    <Container>
+      <div class="logo">
+      </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <img src="/escena360-Aframe/img/SomosF5.svg" height="50px" width="50px" alt="logo">
+                  <a class="nav-link active" aria-current="page"
+                    href="https://factoriaei.coderf5.es/Inmersiva"><strong>Experiencia Inmersiva</strong> </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#entrada"
+                    data-src="/escena360-Aframe/Componentes/Recepcion.html">Recepción👋</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Street"
+                    data-src="/escena360-Aframe/Componentes/street.html">StreetView📌</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Oficina"
+                    data-src="/escena360-Aframe/Componentes/Oficina.html">Oficina⚠️</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#EstanciaCocina"
+                    data-src="/escena360-Aframe/Componentes/EstanciaCocina.html">EstanciaCocina🥪</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Salon1" data-src="/escena360-Aframe/Componentes/Salon1.html">Salon Clase #1
+                    👾</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#salon2" data-src="/escena360-Aframe/Componentes/salon2.html">Salon Clase #2
+                    🦆</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </nav>
+
+      <!-- <p><strong>¡Acompañanos a realizar esta visita 360 de nuestra sede F5 Madrid!</strong></p></a> -->
+
+      <a-assets>
+        <img id="street" src="https://cdn.glitch.global/5e54b684-756b-413c-8816-13237484939c/1.JPG?v=1694332717226"
+          alt="street" crossOrigin="anonymous" />
+        <img id="EspacioComedor"
+          src="https://cdn.glitch.global/5e54b684-756b-413c-8816-13237484939c/4.JPG?v=1694333249392"
+          alt="EspacioComedor" crossOrigin="anonymous" />
+        <img id="Oficina" src="https://cdn.glitch.global/5e54b684-756b-413c-8816-13237484939c/3.JPG?v=1694332725365"
+          alt="Oficina" crossOrigin="anonymous" />
+        <img id="entrada" src="https://cdn.glitch.global/5e54b684-756b-413c-8816-13237484939c/2.JPG?v=1694332720052"
+          alt="entrada" crossOrigin="anonymous" />
+        <img id="salon1" src="https://cdn.glitch.global/5e54b684-756b-413c-8816-13237484939c/5.JPG?v=1694332735225"
+          alt="Salón 1" crossOrigin="anonymous" />
+        <img id="salon2" src="https://cdn.glitch.global/5e54b684-756b-413c-8816-13237484939c/6.JPG?v=1694332739059"
+          alt="Salón 2" crossOrigin="anonymous" />
+      </a-assets>
+
+      <div className="">
+        <iframe id="entrada" src="/escena360-Aframe/Componentes/Recepcion.html" height="1000" width="100%" id="entrada"
+          src="/escena360-Aframe/Componentes/Recepcion.html" height="1000" width="100%" id="Street"
+          src="/escena360-Aframe/Componentes/street.html" height="1000" width="100%" id="Oficina"
+          src="/escena360-Aframe/Componentes/Oficina.html" height="1000" width="100%" id="EstanciaCocina"
+          src="/escena360-Aframe/Componentes/EstanciaCocina.html" height="1000" width="100%" id="Salon1"
+          src="/escena360-Aframe/Componentes/Salon1.html" height="1000" width="100%" id="salon2"
+          src="/escena360-Aframe/Componentes/salon2.html" height="1000" width="100%"></iframe>
+
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+      <script src="/escena360-Aframe/js/changeimg.js" content="text/html"></script>
+
+</body>
+
+</html>
